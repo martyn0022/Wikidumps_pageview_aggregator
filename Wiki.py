@@ -24,15 +24,16 @@ def generatewiki():
                                 processed = processed.lower() 
                                 
                                 print(k[:-4], processed, 'B', qnr , file = file)
+                        return filename
                     except:
                         print(k[:-4], v['title'], 'B', qnr )
                         pass
-
+            
 
 def generatepageview():
     year = input('Which year of pageview counts do you want to load:  ')
-    with open('pagecounts-{year}-views-ge-5-totals','r', encoding = 'utf-8') as infile:
-        with open('pageviews_{year}.txt' , 'w', encoding = 'utf-8') as outfile: 
+    with open('pagecounts-{}-views-ge-5-totals'.format(year),'r', encoding = 'utf-8') as infile:
+        with open('pageviews_{}.txt'.format(year) , 'w', encoding = 'utf-8') as outfile: 
             for i, line in enumerate(infile):
                 wiki_code, title, count = line.split(' ')
                 count = int(count)
@@ -41,6 +42,6 @@ def generatepageview():
                 if project != 'z':
                     continue
                 print(lang ,title.lower(), 'A', count, file = outfile)
-
+            return year
     
 
