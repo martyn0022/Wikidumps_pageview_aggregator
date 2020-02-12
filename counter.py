@@ -13,7 +13,7 @@ class Counter():
 
         self.prev_article = (None, None)
 
-        with open('finaloutput.txt' , 'r', encoding='utf-8') as f:
+        with open('ABlist.txt' , 'r', encoding='utf-8') as f:
                 for line in f:
                     lang, title, linetype, q_views = line.split(' ')
                     line_handler = self.line_handlers[linetype]

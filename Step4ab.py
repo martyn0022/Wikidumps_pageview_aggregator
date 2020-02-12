@@ -1,4 +1,6 @@
 import csv
+import sys
+import fileinput
 
 class Counter():
     
@@ -13,11 +15,10 @@ class Counter():
 
         self.prev_article = (None, None)
 
-        with open('ABlist.txt' , 'r', encoding='utf-8') as f:
-                for line in f:
-                    lang, title, linetype, q_views = line.split(' ')
-                    line_handler = self.line_handlers[linetype]
-                    line_handler(lang, title, linetype, q_views)
+        for line in fileinput.input():
+            lang, title, linetype, q_views = line.split(' ')
+            line_handler = self.line_handlers[linetype]
+            line_handler(lang, title, linetype, q_views)
 
     def handle_view_count_line(self, lang, title, linetype, views):
         title = title.lower()  
@@ -28,7 +29,6 @@ class Counter():
         self.prev_article = (lang, title)
         
     def handle_qnr(self, lang, title, linetype, qnr):
-        with open('Qviews.txt', 'a' , encoding = 'utf-8') as outfile:
-            if (lang, title) == self.prev_article:
-                #qviews = qnr[:-1] , self.view_count
-                outfile.write(f'{qnr[:-1]} ' + self.view_count)
+        if (lang, title) == self.prev_article:
+            #qviews = qnr[:-1] , self.view_count
+            print( qnr[:-1] , self.view_count)
