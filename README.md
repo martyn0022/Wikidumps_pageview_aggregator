@@ -13,7 +13,7 @@ python GenerateQviews.py
 
 4. Specify the OpenStreetMap Key-Value pair (ie. historic-castle) as prompted by the console
 
-5.Hit enter. The following sorted list of Qnumber-Views should be saved into a file named ```Qviews.txt```.
+5. Hit enter. The following sorted list of Qnumber-Views should be saved into a file named ```Qviews.txt```.
 
 ## Querying other time periods
 The list in the Dropbox link was generated from Wikipedia page views in Decemeber 2019. However if you have to query the page views in a different time period, heres how:
