@@ -31,6 +31,6 @@ resulting ```curl``` statement should be <br> ```curl https://dumps.wikimedia.or
 ```shell
 ./GenerateAggregatedQviews.sh
 ```
-This will take a very long while as in generates a list of Wikidata Qnumbers against its corresponding number of views across all Wikipedia page languages. 
+ This will take a very long while as in generates a list of Wikidata Qnumbers against its corresponding number of views across all Wikipedia page languages. 
 
 5. The consolidated file should be saved as ```AggregatedQviews.txt```.
