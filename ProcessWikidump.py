@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+# Step 1
 import sys
 import bz2
 import json

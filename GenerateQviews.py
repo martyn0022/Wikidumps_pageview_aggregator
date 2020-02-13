@@ -31,12 +31,5 @@ with open("Qnumbers.txt" , 'w' , encoding = 'utf-8') as f:
         f.write(qnr + '\n')
 print('file saved as Qnumbers.txt')
 
-#TODO: Unix sort the queried OSM qnumbers and the superlist
-subprocess.run(args = [r'C:\Users\mlee\AppData\Local\Programs\Git\usr\bin\sort.exe', 'Qnumbers.txt', 'AggregatedQviews.txt' ,'-o' , 'jointlist.txt','-u','-r' ],  encoding = 'utf-8')
-print('jointlist generated')
 
-
-#TODO: step 8
-Qviews.generateQviews()
-
-subprocess.run(args = [r'C:\Users\mlee\AppData\Local\Programs\Git\usr\bin\sort.exe', 'queried_Qviews.txt', '-g', '-k','2', '-o' , 'resultlist.txt','-r' ], encoding = 'utf-8')
+subprocess.run(['getQueriedQviews.sh'], shell = True)

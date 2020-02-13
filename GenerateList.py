@@ -1,3 +1,5 @@
+# USE GeneratAggregatedQviews.sh INSTEAD
+
 import Wiki
 import counter
 import subprocess
