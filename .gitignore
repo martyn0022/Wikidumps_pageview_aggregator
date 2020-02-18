@@ -14,3 +14,7 @@ __pycache__/queryOSM.cpython-38.pyc
 __pycache__/GenerateRawQviews.cpython-38.pyc
 .vscode/settings.json
 AggregatedQviews.txt
+AggregatedQviews.txt
+Alist.lnk
+Blist.lnk
+ProcessWikidump.py

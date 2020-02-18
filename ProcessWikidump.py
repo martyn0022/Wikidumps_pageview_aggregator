@@ -7,7 +7,7 @@ import json
 import fileinput
 
 def generatewiki():
-    for i, line in enumerate(fileinput.input(openhook=fileinput.hook_encoded('utf-8'))):
+    for i, line in enumerate(fileinput.input()):
         #line = line.decode()
         if i == 0:
             assert line == '[\n'
@@ -26,8 +26,8 @@ def generatewiki():
                         print(k[:-4], processed, 'B', qnr )
                 #return filename
             except:
-                print(k[:-4], v['title'], 'B', qnr , file=sys.stderr)
-                raise
+                print(k[:-4], processed, 'B', qnr, file = stderr )
+                pass
 
 if __name__ == '__main__':
     generatewiki()
