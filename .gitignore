@@ -1,3 +1,16 @@
 .txt
 __pycache__/Step4ab.cpython-38.pyc
 wikidump.txt
+Qnumbers.txt
+interim.txt
+checklist.txt
+cache/overpass-ada2cf0f0eea4810b3558c237399cab16bf22387
+cache/overpass-0f41a5399cf0fc2a01a790ed32a73a1cb1b4d334
+cache/nominatim-77dcd849e550afec3c83d38fcc8cbc72c058f4db
+AggregatedQviews.txt
+__pycache__/Step8.cpython-38.pyc
+__pycache__/Qviews.cpython-38.pyc
+__pycache__/queryOSM.cpython-38.pyc
+__pycache__/GenerateRawQviews.cpython-38.pyc
+.vscode/settings.json
+AggregatedQviews.txt
