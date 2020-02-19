@@ -3,7 +3,7 @@ The list in the Dropbox link was generated from Wikipedia page views in Decemebe
 
 1. Open GenerateAggregatedQviews.sh in any editor.
 
-2. On ``` Line 6 ``` of the script, in the first ``` curl ``` statement, you could change the time period in ```https://dumps.wikimedia.org/other/pagecounts-ez/merged/pagecounts-2019-12-views-ge-5-totals.bz2``` to another time period by changing the "2019-12" to any time period available in this [link](https://dumps.wikimedia.org/other/pagecounts-ez/merged/).
+2. On ``` Line 6 ``` of the script, in the first ``` curl ``` statement, you could change the time period in ```https://dumps.wikimedia.org/other/pagecounts-ez/merged/pagecounts-2019-12-views-ge-5-totals.bz2``` to another time period by changing the "2019-12" to any time period available in the [pagecounts-ez](https://dumps.wikimedia.org/other/pagecounts-ez/merged/).
 
 3. For example if you want to query the page views in July of 2015 you would change ```https://dumps.wikimedia.org/other/pagecounts-ez/merged/pagecounts-```**2019-12**```-views-ge-5-totals.bz2``` 
  <br> to <br>
